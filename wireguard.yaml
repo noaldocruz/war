@@ -10,7 +10,7 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/London
-      #- SERVERURL=1.1.1.1 #optional
+      - SERVERURL=#SERVER_URL#
       - SERVERPORT=51820 #optional
       - PEERS=1 #optional
       - PEERDNS=auto #optional
