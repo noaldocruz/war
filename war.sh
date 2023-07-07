@@ -10,5 +10,6 @@ wget https://raw.githubusercontent.com/noaldocruz/war/main/wireguard.yaml
 sed -i "s/SERVER_URL_REPLACE/$SERVER_URL/" wireguard.yaml
 mv wireguard.yaml docker-compose.yaml
 sudo docker-compose up -d 
+sleep 5
 sudo zip -r config.zip /root/wireguard/peer1
 echo "beibiiii" | mutt -a "config.zip" -s "config" -e 'my_hdr From: sender@parachicas.top' -- $EMAIL_TO_SEND
